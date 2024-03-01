@@ -10,6 +10,15 @@ def end(running): # end code
     print("You Died! Better Luck Next Time!")
 
 def mainLoop(): # main program loop
+  # define initial conditions
+  power = 100
+  time = 0
+  running = [True,True]
+  left_door_closed = False
+  right_door_closed = False
+  # in the works
+  power_const = 0.5
+  time_const = 1
   while running[0]: # main loop
     # define current iteration power drain
     power_usage = power_const
